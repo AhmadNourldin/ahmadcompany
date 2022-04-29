@@ -1,6 +1,57 @@
+//variables
+$btn-options:hsl(205, 86%, 17%);
+$clr-logo:hsl(205, 78%, 60%);
+
 //The Root Style Selector
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+//The body Css 
+body{
+    font-family: "Open Sans",sans-serif;
+}
+//Create The Navbar Section
+.Navbar{ //The Navbar Root Container
+    height: 3rem;
+    width: 100%;
+    position: fixed;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    .Navbar_Container{ // This is the Child Container of the Nav
+        width: 90vw;  // The vw Create a little margin after the element
+        max-width: 38.75rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .Navbar_Logo{ // This Is the logo Link
+            font-family: "Roboto",sans-serif;
+            color: $clr-logo;
+            font-weight: 700;
+            letter-spacing: 0.25rem;
+        }
+        .Navbar_Option_Button{ // The Option Buttons
+            display: flex;
+            gap: 1rem;
+            button{
+                font-weight: 500;
+                font-size: 1.1rem;
+                letter-spacing: 0.25rem;
+                color: var($btn-options);
+            }
+            button:hover{
+                color: $clr-logo;
+            }
+        }
+    }
 }
