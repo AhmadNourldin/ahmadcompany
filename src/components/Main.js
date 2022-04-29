@@ -6,7 +6,8 @@ const Main = () => {
             {/* The Base Container of the Main Section */}
             <div className="Main_Container">
                 <div className="Main_BackgroundColorName">
-                    Background Color : #F1f5f8
+                    Background Color :&nbsp;
+                    <span className="Main_ColorName">#F1f5f8</span>
                 </div>
                 {/* This Button Is going to change the background-color
                 And the Name of the Background in the Main_BackgroundColorName */}
